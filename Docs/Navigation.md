@@ -1068,6 +1068,10 @@ func testDismissal() async {
         state.path[id: 0]?.modify(\.counter, yield: { state in
             state.count = 4
         })
+        
+        // $0.path[id: 0, case: \.guessMyAge]?.isGuessAgeButtonTapped = true
+        // $0.path[id: 0, case: \.guessMyAge]?.age = nil
+        // $0.path[id: 0, case: \.guessMyAge]?.isGuessAgeIncorrect = false
     }
     
     await store.send(.path(.element(id: 0, action: .counter(.incrementButtonTapped)))) { state in
