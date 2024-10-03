@@ -23,6 +23,7 @@ var body: some ReducerOf<Self> {
                 // 2️⃣ non-cancellation 에 대한 에러 처리
             }
         }
+    }
 }
 ```
 
